@@ -11,7 +11,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -qy \
   iputils-ping \
   netcat \
   iproute2
-RUN add-apt-repository ppa:gluster/glusterfs-6 && \
+RUN add-apt-repository ppa:gluster/glusterfs-5 && \
   apt-get update -q && \
   DEBIAN_FRONTEND=noninteractive apt-get install -qy \
   glusterfs-server
